@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Order Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container border p-4 mt-5 bg-light">
+        <nav class="navbar navbar-light bg-light fixed-top">
+            <div class="container">
+                <a href="javascript:history.back()" class="btn btn-outline-dark">Back</a>
+            </div>
+        </nav>
+        <main class="container mt-5">
+            <div class="row">
+                <section class="cart-items col-md-8">
+                    <h2 class="text-primary">Your Shopping Cart</h2>
+                    <table class="table table-hover">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th>Total</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Example item -->
+                            <tr>
+                                <td>Stylish T-Shirt</td>
+                                <td><input type="number" value="1" min="1" class="form-control"></td>
+                                <td>$15.00</td>
+                                <td>$15.00</td>
+                                <td><button class="btn btn-outline-danger btn-sm">Remove</button></td>
+                            </tr>
+                            <tr>
+                                <td>Classic Jeans</td>
+                                <td><input type="number" value="2" min="1" class="form-control"></td>
+                                <td>$25.00</td>
+                                <td>$50.00</td>
+                                <td><button class="btn btn-outline-danger btn-sm">Remove</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="order-summary col-md-4">
+                    <h2 class="text-success">Order Summary</h2>
+                    <div class="border p-4 bg-light">
+                        <p>Subtotal: <span class="fw-bold">$65.00</span></p>
+                        <p>Tax (5%): <span class="fw-bold">$3.25</span></p>
+                        <p><strong>Total: $68.25</strong></p>
+                        <button class="btn btn-success w-100">Proceed to Checkout</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+
+    <footer class="bg-dark text-center text-lg-start mt-5" style="position: fixed; bottom: 0; width: 100%;">
+        <div class="text-center p-3 text-white">
+            © 2023 Closet Collection. All rights reserved.
+        </div>
+    <footer class="bg-dark text-center text-lg-start mt-5" style="position: fixed; bottom: 0; width: 100%;">
+        <div class="text-center p-3 text-white">
+            © 2023 Closet Collection. All rights reserved.
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
